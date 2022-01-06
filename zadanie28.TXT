@@ -1,0 +1,15 @@
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ for ( int mar=8;mar<=38;mar=mar+2)
+{ 
+cout<<mar<<endl;
+}
+ cout<<endl;
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}

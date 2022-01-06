@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ for ( int mar=0;mar<=19;mar++)
+{ 
+ printf("*");
+ cout<<endl;
+}
+ cout<<endl;
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
