@@ -15,4 +15,4 @@ float a, sigma=0;
  printf("Nastapil BREAK \n");
  system("PAUSE");
  return EXIT_SUCCESS;
-}
+}
