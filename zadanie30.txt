@@ -1,0 +1,20 @@
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+
+
+using namespace std;
+int main(int argc, char *argv[])
+{
+    cout.precision(4);
+for ( int i=195;i<=215;i++) // odpowiednie granice pętli
+{
+cout<<"SQRT("<<i<<")="<<sqrt(i)<<"\n";
+}
+cout<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}

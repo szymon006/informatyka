@@ -1,0 +1,42 @@
+#include <cstdlib>
+#include <iostream>
+#include <windows.h> 
+using namespace std;
+void gotoxy(int x, int y) 
+{ 
+ COORD coord; 
+ coord.X = x; 
+ coord.Y = y; 
+ SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord); 
+}
+int main(int argc, char *argv[])
+{
+ for (int i=0;i<=16;i++)
+ {
+ gotoxy(-10,i);
+ cout<<" *";
+ } 
+  for (int i=0;i<=9;i++)
+ {
+ gotoxy(36,i);
+ cout<<"*";
+ }  
+  for (int i=0;i<=9;i++)
+ {
+ gotoxy(0,i);
+ cout<<"*";
+ } 
+   for (int i=0;i<=16;i++)
+ {
+ gotoxy(-21,1);
+ cout<<" *";
+ }
+ 
+ cout<<" ";
+ cout<<endl;
+  cout<<" ";
+ cout<<endl;
+ 
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
