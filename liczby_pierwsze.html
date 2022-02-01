@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<style>
+
+p {
+text-size: 2cm;
+}
+
+</style>
+</head>
+
+<body background="https://cdn.shopify.com/s/files/1/1095/1464/products/Triangles_coctail_grey_big_8e964502-fa74-4908-86c7-1bfddd86688e_900x.jpg?v=1625088641">
+
+<p> znaleziona liczba pierwsza = 2515 </p> <br>
+Liczba pierwsza, liczba naturalna n>1, dla której istnieją tylko dwa dzielniki naturalne: 1 i n. <br>
+<br>
+Największą znalezioną liczbą pierwszą jest <sup>269725932</sup> –1 (7 VII 1999), liczba ta zapisana w systemie dziesiętnym składa się z ponad 2 mln cyfr.<br>
+<br>
+Sprawdzamy czy kolejne liczby naturalne od 2 do pierwiastek(n) są podzielnikami liczby n. 
+Sprawdzenie podzielności odbywa się poprzez użycie funkcji % (MOD->reszta z dzielenia), 
+jeśli reszta z dzielenia jest zero to oznacza to, że liczba n jest podzielna przez liczbę mniejszą 
+od n i n nie jest liczba pierwszą. Należy zauważyć, że nie jest konieczne sprawdzanie 
+kolejnych liczb naturalnych do 2 do n a wystarczy do pierwiastek(n). Zmienna k ma wartość 
+domyślnie zero. Po zakończeniu programu sprawdzamy wartość zmiennej k, jeśli jest równa 
+zero oznacza to, że liczba n jest pierwsza, jeśli nie (czyli jeden) to liczba nie jest pierwsza. 
+Zmiana k zmieniana jest na wartość jeden gdy liczba n jest podzielna przez kolejną liczbę 
+naturalną mniejszą od pierwiasta(n). 
+
+</body>
+
+</html>
