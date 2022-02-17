@@ -1,0 +1,22 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char argv[])
+{
+    int n_mar;
+    int silnia_mar=1;
+
+    cout<<"Podaj n: ";
+    cin>>n_mar;
+
+for(int i=n_mar;i>1;i--)
+    silnia_mar=silnia_mar*i;
+
+    cout<<n_mar<<"! = "<<silnia_mar<<endl;
+
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

@@ -1,0 +1,35 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+ 
+int main()
+{
+    int n, pierw, pom;
+ 
+        cout<<"Podaj liczbe: ";
+        cin>>n;
+        
+        pierw = sqrt(n);
+ 
+        cout<<"Czynniki pierwsze liczby "<<n<<": ";
+ 
+        int k=2; 
+ 
+
+        for (n>1&&k<=pierw)
+        {
+                for (n%k==0) 
+                {
+                        cout<<k<<" ";
+                        n/=k;
+                }
+                ++k;
+        }
+        
+        if(n>1)
+               cout<<n;
+        cout<<endl;
+ 
+system("PAUSE");
+return EXIT_SUCCESS;
+}
