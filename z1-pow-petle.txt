@@ -1,0 +1,38 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    int m, m1, n, n1, r;
+    system("chcp 1250");
+    
+    do
+    {
+                           
+    
+    cout<<"n>=m"; cout<<endl;
+    cout<<"podaj n=";
+    cin>>n;
+    cout<<"podaj m=";
+    cin>>m;
+    if (n<m) {cout<<" n musi byc >=m "; cout<<endl;}
+    
+    m1=m;
+    n1=n;
+    
+}
+while (!(n>=m));
+    
+    do
+    {
+    r=(n%m), n=m, m=r;
+}
+
+while (!(m==0));
+cout<<"NWD=("<<n1<<","<<m1<<")="<<n<<endl;
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
