@@ -1,0 +1,37 @@
+//Wykonaj program rysujący linię pionową składającą się z podwójnej ilości gwiazdek na 
+środku ekranu o wczytanej długości. Długość linii od 2 do 20.
+
+#include <cstdlib>
+#include <iostream>
+#include <windows.h>
+using namespace std;
+void gotoxy(int x, int y)
+{
+COORD coord;
+coord.X = x;
+coord.Y = y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+int main(int argc, char *argv[])
+{
+    int m;
+    int i;
+    
+    cout<<"Podaj dlugosc linii:";
+    cout<<endl;
+    cin>>m;
+    
+if (m>=2 && m<=20) {
+for (i=0;i<m;++i)
+{
+gotoxy(40,i);
+cout<<"**";
+}
+}
+cout<<" ";
+cout<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+

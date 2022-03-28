@@ -1,0 +1,39 @@
+//Napisać program obliczając:
+// sumę dwucyfrowych liczb naturalnych, czyli :
+//𝑠𝑢𝑚𝑎 = 𝑖
+//99
+//𝑖=10
+// średnią dwucyfrowych liczb naturalnych (podziel sumę przez odpowiednią wartość)
+// ilość liczb dwucyfrowych podzielnych przez liczbę wczytaną z klawiatury. 
+
+#include <cstdlib>
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    
+    int suma=0;
+    float srednia;
+    int liczba_podzielna;
+    int licznik_liczb=0;
+    cout<<"Podaj liczbe podzielna=";
+    cin>>liczba_podzielna;
+    for ( int i=10; i<=99;i++ )
+    {
+        
+        if( (i % liczba_podzielna)==0 ) { licznik_liczb++; }
+        suma=suma+i;
+        
+        }
+    cout<<"suma liczb dwucyfrowych to: "<<suma<<endl;
+    srednia=1.0*(suma/90.0);
+    cout<<"ilosc liczb to: "<<licznik_liczb<<endl;
+    cout<<"srednia to: "<<srednia<<endl;
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

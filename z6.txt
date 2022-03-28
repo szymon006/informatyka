@@ -1,0 +1,26 @@
+//Napisać program drukujący liczby, ich kwadraty i sześciany od numeru w dzienniku do numeru w dzienniku+15
+
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+
+
+using namespace std;
+int main(int argc, char *argv[])
+{
+    cout.precision(4);
+for ( int i=15;i<=30;i++) // odpowiednie granice pętli
+{
+cout<<"I="<<i<<"""     ""I*I="<<i*i<<"""     ""I*I*I="<<i*i*i<<"     ""\n";
+}
+cout<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+
+
+

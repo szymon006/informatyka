@@ -1,0 +1,44 @@
+//Napisać program, który po wczytaniu dwóch liczb naturalnych większych od 1, czyli liczba 
+dol oraz liczba gor gdzie dol < gor. Wypisze wszystkie liczby pierwsze bliźniacze. Liczby 
+pierwsze bliźniacze to dwie liczby pierwsze różniące się miedzy sobą o dwa np. 3 i 5
+
+
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+using namespace std;
+int main(int argc, char *argv[])
+{
+
+int a, b, j;
+
+
+cout<<"Podaj dolna liczbe przedzialu przeszukiwania="; 
+scanf("%d",&a);
+
+cout<<"Podaj gorna liczbe przedzialu przeszukiwania="; 
+scanf("%d",&b);
+
+j=2;
+for ( int i=a;i<b;i++)
+{
+
+i=i+1;
+
+  while(i%j!=0)
+    j++;
+
+if(j==i)
+printf("Znalezione liczby blizniacze to: ""%d\n",i);
+j=2;
+    
+}
+
+
+cout<<"\n";
+system("PAUSE");
+return EXIT_SUCCESS;
+}
