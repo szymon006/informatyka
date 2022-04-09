@@ -1,0 +1,7 @@
+Wykonaj:
+
+1)Zapisz w zeszycie temat zadnia. 
+2)uruchom przykład 
+3)Zapisz w zeszycie siedem linijek wypisywania tablicy po jej wczytywaniu, czyli działanie drugiej pętli. 
+
+Temat : Przykład demonstruje wczytywanie do tablicy siedmioelementowej jednowymiarowej oraz wypisanie wczytanych wartości.

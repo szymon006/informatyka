@@ -1,0 +1,3 @@
+ZADANIE 32g 
+
+Napisać program rezerwujący tablicę jednowymiarową pięcio elementową o nazwie t_trzy_litery_nazwiska_ucznia np. t_kow. Do tablicy wpisz najmniejsze liczby pierwsze od wartości najmniejszej do największej. Użyj następującego przypisania wartości początkowych int ale[4]={4,2,0,-2};

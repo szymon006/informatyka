@@ -1,0 +1,15 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int mar[4]={4,2,0,-2};
+ cout<<"w tablicy A jest"<<"\n";
+ for(int i=0;i<=3;i++)
+ {
+ cout<<"w komorce mar["<<i<<"]="<<mar[i]<<"\n";
+
+ }
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
