@@ -1,0 +1,32 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int a[8];
+ for(int i=0;i<=7;i++)
+ {
+ cout<<"podaj A["<<i<<"]=";
+ cin>>a[i];
+ }
+
+ int l_mniejsze=0;
+ int l_wieksze=0;
+ int l_rowne=0;
+ for(int i=0;i<=7;i++)
+ {
+if(a[i]>0) {
+l_wieksze++; }
+else if(a[i]<0) {
+l_mniejsze++; }
+else if(a[i]==0) {
+l_rowne++; }
+ }
+ cout<<" "<<endl;
+ cout<<"Liczb wiekszych od 0 jest="<<l_wieksze<<endl;
+ cout<<"Liczb mniejszych od 0 jest="<<l_mniejsze<<endl;
+ cout<<"Liczb rownych 0 jest="<<l_rowne<<endl;
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+
