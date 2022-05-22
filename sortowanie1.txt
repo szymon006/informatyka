@@ -1,0 +1,33 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int d_mar[7]={15,6,9,7,31,45,60};
+ int skrytka;
+
+ cout<<"w tablicy A jest"<<"\n";
+ for(int i=0;i<=6;i++)
+ {
+ cout<<"w komorce A["<<i<<"]="<<d_mar[i]<<"\n";
+ for(int j=0;j<6;j++)
+ {
+ for(int i=0;i<6;i++)     
+ {
+ if(d_mar[i]>d_mar[i+1])
+ {
+ skrytka=d_mar[i]; d_mar[i]=d_mar[i+1]; d_mar[i+1]=skrytka;         
+
+}
+}       
+}
+ cout<<"w tablicy A po sortowaniu jest"<<"\n";
+ for(int i=0;i<=6;i++)
+ {cout<<"w komorce A jest["<<i<<"]="<<d_mar[i]<<"\n";}
+ 
+  
+ }
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+

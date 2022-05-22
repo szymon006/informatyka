@@ -1,0 +1,28 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int mar_b[9]={15,0,9,-7,-31,-45,60,-5,-9};
+ int skrytka;
+
+ for(int s=0;s<=8;s++)
+ {
+ for(int s=0;s<8;s++)     
+ {
+ if(mar_b[s+1]>mar_b[s])
+ {
+ skrytka=mar_b[s]; mar_b[s]=mar_b[s+1]; mar_b[s+1]=skrytka;         
+
+}       
+}
+ cout<<"w tablicy A po sortowaniu jest"<<"\n";
+ for(int s=0;s<=8;s++)
+ {cout<<"w komorce A jest["<<s<<"]="<<mar_b[s]<<"\n";}
+ 
+  
+ }
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+
